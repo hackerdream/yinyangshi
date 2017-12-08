@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* top部分 */
+#top-main {
+    width: 100%;
+    min-width: 1260px;
+    height: 1623px;
+    background: url("../img/top_bg.png") no-repeat center;
+}
+
+#logo {
+    position: absolute;
+    left: 60px;
+    top: 40px;
+    z-index: 10;
+}
+
+#logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#logo a img {
+    float: left;
+    height: 88px;
+    margin-left: 8px;
+}
+
+#logo a img:nth-child(1) {
+    width: 25px;
+}
+
+#logo a img:nth-child(2) {
+    width: 88px;
+}
+
+#index-entry {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    z-index: 10;
+}
+
+#index-entry a {
+    display: block;
+    width: 260px;
+    height: 50px;
+    background: url("../img/top_entry.png") -2px 101px;
+}
+
+#index-entry:hover a {
+    background: url("../img/top_entry.png") 260px -1px;
+}
+
+#top-man {
+    width: 100%;
+}
+
+#top-man img {
+    position: absolute;
+    top: 10px;
+    z-index: 5;
+}
+
+#top-man img:nth-child(1) {
+    left: -480px;
+}
+
+#top-man img:nth-child(2) {
+    top: 30px;
+    right: -240px;
+}
+
+#top-center {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 680px;
+    height: 570px;
+    margin-left: -266px;
+    background: url("../img/top_center.png") no-repeat center;
+    z-index: 15;
+}
+
+#smoke {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1092px;
+    background: url("../img/smoke.png") no-repeat bottom center;
+    z-index: 10;
+}
+
+#app-down {
+    position: absolute;
+    left: 50%;
+    top: 662px;
+    margin-left: -150px;
+    width: 345px;
+    height: 130px;
+    background: rgba(72, 65, 82, .9);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+#app-down .app-qr {
+    position: relative;
+    float: left;
+    width: 93px;
+    height: 93px;
+    padding: 7px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+#app-down .app-qr:after{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: block;
+    content:'';
+    width: 100px;
+    height: 5px;
+    background: url("../img/top_entry.png") no-repeat -500px -106px;
+    animation: moveBottom 2.5s linear infinite;
+}
+
+@keyframes moveBottom{
+    0%{top:0px}
+    100%{top:100px}
+}
+
+#app-down .app-qr img{
+    width: 100%;
+    height: 100%;
+}
+
+#app-down a {
+    float: left;
+    width: 171px;
+    height: 51px;
+    margin: 0 20px;
+    border-radius: 5px;
+    background: url("../img/top_entry.png") no-repeat;
+}
+
+#app-down a:nth-child(2) {
+    margin-top: 10px;
+    background-position: -142px -187px;
+}
+
+#app-down a:nth-child(2):hover {
+    background-position: 0 -306px;
+}
+
+#app-down a:nth-child(3) {
+    margin-top: 6px;
+    background-position: -142px -136px;
+}
+
+#app-down a:nth-child(3):hover {
+    background-position: -358px -51px;
+}
