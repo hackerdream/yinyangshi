@@ -43,8 +43,8 @@
         $("#top-main").mouseover(function (e) {
 
             $("#top-main").mousemove(function (e) {
-                var nTop = cTop + e.clientY / 50, //竖直
-                    cWidth = e.clientX / 50; //水平移动
+                var nTop = cTop + e.clientY / 60, //竖直
+                    cWidth = e.clientX / 60; //水平移动
 
                 $man.eq(0).css({
                     top: nTop + 'px',

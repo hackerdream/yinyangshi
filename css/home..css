@@ -1,16 +1,19 @@
 @charset "UTF-8";
-
 #home {
     position: relative;
     width: 100%;
     height: 100%;
 }
+
+
 /* top部分 */
+
 #top-main {
     width: 100%;
     min-width: 1260px;
-    height: 1623px;
+    height: 1123px;
     background: url("../img/top_bg.png") no-repeat center;
+    overflow: hidden;
 }
 
 #logo {
@@ -59,7 +62,10 @@
 }
 
 #top-man {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 #top-man img {
@@ -123,24 +129,29 @@
     background: #fff;
     border-radius: 5px;
 }
-#app-down .app-qr:after{
+
+#app-down .app-qr:after {
     position: absolute;
     left: 5px;
     top: 5px;
     display: block;
-    content:'';
+    content: '';
     width: 100px;
     height: 5px;
     background: url("../img/top_entry.png") no-repeat -500px -106px;
     animation: moveBottom 2.5s linear infinite;
 }
 
-@keyframes moveBottom{
-    0%{top:0px}
-    100%{top:100px}
+@keyframes moveBottom {
+    0% {
+        top: 0px
+    }
+    100% {
+        top: 100px
+    }
 }
 
-#app-down .app-qr img{
+#app-down .app-qr img {
     width: 100%;
     height: 100%;
 }
@@ -171,3 +182,46 @@
 #app-down a:nth-child(3):hover {
     background-position: -358px -51px;
 }
+
+
+/* 波浪 */
+
+#wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#wave .wave1 {
+    position: absolute;
+    left: 0;
+    top: 900px;
+    z-index: 20;
+    animation: wave1 7s alternate ease infinite;
+}
+
+#wave .wave2 {
+    position: absolute;
+    left: -100px;
+    top: 640px;
+    z-index: 20;
+    animation: wave1 7s alternate ease infinite;    
+}
+
+@keyframes wave1 {
+    0% {
+        transform: translatey(0);
+    }
+    25% {
+        transform: translatex(20px);
+    }
+    50%{
+        transform: translatey(20px);        
+    }
+    100%{
+        transform: translatex(0);        
+    }
+}
+
+/* 情报部分 */
